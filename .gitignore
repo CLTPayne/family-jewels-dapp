@@ -1,0 +1,5 @@
+.DS_Store
+.env
+cypress/screenshots/
+coverage/
+node_modules/
