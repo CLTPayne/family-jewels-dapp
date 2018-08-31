@@ -54,7 +54,16 @@ I want to only award points once for the top jewel per player per trait
 ```
 
 ### Reference Points:
-All four available jewels in the game:
+
+Background on mewtation jewels:
+
+- 320 possible mewtations/traits/cattributes in the game,
+- Each mewtation has 100 of the top 3 jewels awarded (1 diamond, 9 gilded and 90 amethyst).
+- For the top three jewel categories there is a maximum 32,000 jewels awarded to players. This is static for the duration of the game.
+- Total possible 32,000 cats to query but some mewtations will not actually exist so less.
+- Not all of the mewtations have come into play yet, so some jewels are yet to be awarded.
+
+All 4 available jewels in the game (not including lapis in the leader board for first iteration):
 
 ![jewels](./readme_images/Game_Jewels.png)
 
