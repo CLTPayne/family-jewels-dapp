@@ -71,6 +71,12 @@ Example of a player's family jewels for a single trait. For this trait the playe
 
 ![account](./readme_images/Example_Family_Jewels_Lavander_Trait.png)
 
+Identification of players:
+
+- A player is identifiable via their metamask address
+- CK profile URL can be concatenated with the metamask address
+- CK API data includes metamask address for each jewelled cat owner
+
 ### Mockup:
 Web (full screen) optimised:
 ![web]()
