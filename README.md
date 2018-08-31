@@ -14,7 +14,7 @@ I want to see a score for all family jewel collectors
 
 As an ethereum whale
 So that I have the latest rankings
-I wan the leader board to be updated regularly
+I want the leader board to be updated regularly
 
 As an aspiring collector
 So that I know who the competition are
