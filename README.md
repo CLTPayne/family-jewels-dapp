@@ -2,6 +2,10 @@
 
 A web application to display the CK players with the best collection of family jewels.
 
+### How to use the website locally:
+1. Launch development server with ```npm start``` and visit ```localhost:3000```
+2, When finished with the application, close the server with ```^c```
+
 ### User Stories:
 ```
 As an ethereum whale
@@ -92,5 +96,7 @@ JavaScript and node.js
 1. Investigate the CK Public API using Postman to test a range of endpoints and see the full scope of data available. API documentation is [here](https://docs.api.cryptokitties.co/). Realise that the cats are not listed with the specific data required for the mewtation jewels leader board.
 2. If possible, the CK game developers would prefer that data is not stored locally, but that the API is pinged as often as needed as they are collecting data on the endpoints.
 3. Consider server rendered application as it'll rank higher in search engine results and thus potentially gain more traffic.
-4. CK API is paginated and currently over 17,000 items to gather data for, therefore research options for calling the data. Potentially use a recursive function but would still be making 170+ api calls each time the data is scraped from the game. Also need to consider how to avoid this operation being blocking.
-5. Consider a [stream](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) for accessing data. Also potential that a Graph QL interface might help but still need to access the full set of data in a series of API calls. 
+4. CK API is paginated and currently over 17,000 items to gather data for, therefore research options for calling the data. Can adjust the limit from 12 to 200 and still return the response object in 1145ms but still need minimum 85 concurrent API calls. Potentially use a recursive function but would still be making 170+ api calls each time the data is scraped from the game. Also need to consider how to avoid this operation being blocking.
+5. Consider a [stream](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) for accessing data. Also potential that a Graph QL interface might help but still need to access the full set of data in a series of API calls.
+6. Consider error handling - as the site will be fully dependent on the available data need to have a system for reporting if there is an error accessing data from the API.
+7. Set up Express app to serve the application. Selected [request-promise](https://www.npmjs.com/package/request-promise) for simple HTTP request client with promise support. 
