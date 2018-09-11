@@ -10,4 +10,9 @@ app.use('/', index);
 
 app.listen(3000, () => console.log(`Server is listening on port ${PORT}!`));
 
+app.use((err, req, res, next) => {
+  console.log(err)
+  res.status(500).send('Something is not quite right!'));
+});
+
 module.exports = app;
